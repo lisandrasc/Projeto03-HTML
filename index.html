@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Website With Video Background | HTML & CSS - Project 03">
+    <meta name="author" content="Lisandra Cunha">
+    <meta name="keywords" content="Portfolio,Site,Perfil">
+    <meta name="rebots" content="index,follow">
+    <link rel="shotcut icon" href="">
+    <title>Deep Sea - Explorer </title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Deep Sea</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="img/explorer.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop To </h2>
+            <h3>Exploring The World</h3>
+            <p>Bringing discoveries back to shore is key to our mission.
+                And since the story doesn't stop there, we amplify our mission through a range of activations and experiences that maximize our impact.</p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="img/facebook logo.png"></a></li>
+            <li><a href="#"><img src="img/instagram logo.png"></a></li>
+            <li><a href="#"><img src="img/twitter logo.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+    })
+
+</script>
+
+</html>
